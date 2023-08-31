@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+    }
+    body
+    {
+      min-height: 100vh;
+      background: linear-gradient(#c50000,#fff700);
+    }
+    header
+    {position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo
+    {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    header ul
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header ul li
+    {
+      list-style: none;
+      margin-left: 20px;
+    }
+    header ul li a
+    {
+      text-decoration: none;
+      padding: 6px 15px;
+      color: #fff;
+      border-radius: 20px;
+    }
+    header ul li a:hover,
+    header ul li a.active
+    {
+      background: #fff;
+      color: #2b1055;
+    }
+    h1
+    {
+      font-size: 5em;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: arial;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%)translateY(-50%);
+    }
+
+  </style>
+
+
+  <header>
+    <a href="#" class="logo">Logo</a>
+    <ul>
+      <li><a href="/home_page">Home</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+
+      <li><a href="/contact" class="active">Contact</a></li>
+      
+    </ul>
+  </header>
+  <br>
+  <h1>No Need to Contact </h1>
+  <section>
+    <img src="{% static 'images/stars.png' %}" id="stars">
+  </section>
+  
+</body>
+</html>

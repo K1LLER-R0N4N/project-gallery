@@ -1,0 +1,180 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+    }
+    body
+    {
+      min-height: 100vh;
+      background: linear-gradient(#00ff1e,#fbff00);
+    }
+    header
+    {position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo
+    {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    header ul
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header ul li
+    {
+      list-style: none;
+      margin-left: 20px;
+    }
+    header ul li a
+    {
+      text-decoration: none;
+      padding: 6px 15px;
+      color: #fff;
+      border-radius: 20px;
+    }
+    header ul li a:hover,
+    header ul li a.active
+    {
+      background: #fff;
+      color: #2b1055;
+    }
+
+    .container
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center ;
+      margin: 60px 20px 0 20px;
+    }
+    .container .heading
+    {
+      width: 50%;
+      padding: 50px;
+    }
+    .container .heading h3
+    {
+      font-size: 3em;
+      font-weight: bolder;
+      border-bottom: 3px solid #222;
+      padding-bottom: 10px;
+    }
+    .container .heading h3 span
+    {
+      font-weight: 100;
+    }
+    .container .box::after
+    {
+      content: "";
+      display: table;
+      clear: both;
+      justify-content: space-between;
+    }
+    .container .box .dream
+    {
+      float: left;
+      width: 100%;
+      padding: 5px;
+    }
+    .container .box .dream img
+    {
+      width: 100%;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+  </style>
+
+
+  <header>
+    <a href="#" class="logo">Nature Beauty</a>
+    <ul>
+      <li><a href="/Main_page 2">Home</a></li>
+      <li><a href="/gallery" class="active">Gallery</a></li>
+
+      <li><a href="/contact">Contact</a></li>
+      
+    </ul>
+  </header>
+    <br>
+    <div class="container">
+      <div class="heading">
+        <h3>Photo <span>Gallery</span></h3>
+      </div>
+      <div class="box">
+        <div class="dream">
+          <img src="{% static 'image/1.jpg' %}" id="1">
+          <img src="{% static 'image/2.jpg' %}" id="2">
+          <img src="{% static 'image/3.jpg' %}" id="3">
+          <img src="{% static 'image/4.jpg' %}" id="4">
+          <img src="{% static 'image/5.jpg' %}" id="5">
+
+          <div>
+            <img src="{% static 'image/6.jpg' %}" id="6">
+            <img src="{% static 'image/7.jpg' %}" id="7">
+            <img src="{% static 'image/8.jpg' %}" id="8">
+            <img src="{% static 'image/9.jpg' %}" id="9">
+            <img src="{% static 'image/10.jpg' %}" id="10">
+          </div>
+          <div class="dream">
+            <img src="{% static 'image/11.jpg' %}" id="11">
+            <img src="{% static 'image/12.jpg' %}" id="12">
+            <img src="{% static 'image/13.jpg' %}" id="13">
+            <img src="{% static 'image/14.jpg' %}" id="14">
+            <img src="{% static 'image/15.jpg' %}" id="15">
+          </div>
+          <div class="dream">
+            <img src="{% static 'image/16.jpg' %}" id="16">
+            <img src="{% static 'image/17.jpg' %}" id="17">
+            <img src="{% static 'image/18.jpg' %}" id="18">
+            <img src="{% static 'image/19.jpg' %}" id="19">
+            <img src="{% static 'image/20.jpg' %}" id="20">
+            <img src="{% static 'image/21.jpg' %}" id="21">
+            <img src="{% static 'image/22.jpg' %}" id="22">
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+    </div >
+  <section>
+    <img src="{% static 'images/stars.png' %}" id="stars">
+
+
+  </section>
+  
+  
+</body>
+</html>
